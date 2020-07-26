@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Новая заявка"
+        android:textAlignment="center"
+        android:id="@+id/titleDialog"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Заполните поля"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_history"
+        android:padding="12dp"
+        android:layout_margin="6dp"
+        android:hint="Адрес"
+        />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName|textCapWords"
+        android:background="@drawable/input_history"
+        android:padding="12dp"
+        android:layout_margin="6dp"
+        android:hint="Квартира" />
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName|textCapWords"
+        android:background="@drawable/input_history"
+        android:padding="12dp"
+        android:layout_margin="6dp"
+        android:hint="Заказчик" />
+    <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:typeface="monospace"
+        mask:allowed_chars="1234567890"
+        mask:mask="+7(###)###-##-##"
+        android:singleLine="true"
+        android:hint="1234567890"
+        app:keep_hint="true"
+        android:background="@drawable/input_history"
+        android:padding="12dp"
+        android:layout_margin="6dp"
+        />
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName|textCapWords"
+        android:background="@drawable/input_history"
+        android:padding="12dp"
+        android:layout_margin="6dp"
+        android:hint="Сообщение" />
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName|textCapWords"
+        android:background="@drawable/input_history"
+        android:padding="12dp"
+        android:layout_margin="6dp"
+        android:hint="Примечание" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:entries="@array/t1"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:entries="@array/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/error"
+            android:textColor="#FFF"
+            android:layout_margin="6dp"
+            android:text="отмена" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Создать"
+            android:textColor="#FFF"
+            />
+    </LinearLayout>
+</LinearLayout>

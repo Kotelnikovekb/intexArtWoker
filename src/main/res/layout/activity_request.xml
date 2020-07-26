@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:indeterminate="true"
+        android:layout_below="@+id/toolbar2"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_below="@+id/progressBar3"
+        android:id="@+id/tabsR"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/loadingLiner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="12dp"
+
+                                android:orientation="vertical">
+
+                                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:textSize="24dp"
+                                    android:textStyle="bold"
+                                    app:width_weight="0.4" />
+
+                                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    app:width_weight="0.6" />
+
+                                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    app:width_weight="0.6" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/infoLiner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="12dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView16"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="TextView" />
+
+                                    <TextView
+                                        android:id="@+id/textView17"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="TextView" />
+
+                                    <TextView
+                                        android:id="@+id/textView18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="TextView" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView24"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="TextView" />
+
+                                    <TextView
+                                        android:id="@+id/textView25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="TextView" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textView19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="12dp"
+                                    android:textColor="@color/design_default_color_on_secondary"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView26"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:text="TextView" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background" />
+
+                                <Button
+                                    android:id="@+id/button"
+                                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/ic_pin_drop_black_24dp"
+                                    android:text="Button"
+                                    android:textAlignment="textStart" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background" />
+
+                                <TextView
+                                    android:id="@+id/textView20"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginRight="12dp"
+                                    android:text="TextView"
+                                    android:textColor="@color/design_default_color_on_secondary"
+                                    android:textSize="18sp" />
+
+                                <Button
+                                    android:id="@+id/button2"
+                                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/ic_call_a_24dp"
+                                    android:paddingLeft="12dp"
+                                    android:text="Button"
+                                    android:textAlignment="textStart" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/background" />
+
+                                <TextView
+                                    android:id="@+id/textView22"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:paddingLeft="12dp"
+                                    android:text="Исполнитель:"
+                                    android:textColor="@color/design_default_color_on_secondary"
+                                    android:textSize="18sp" />
+
+                                <Spinner
+                                    android:id="@+id/spinner"
+                                    android:layout_width="match_parent"
+                                    android:spinnerMode="dialog"
+                                    android:layout_height="wrap_content" />
+
+                                <Button
+                                    android:id="@+id/button4"
+                                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/ic_person_24dp"
+                                    android:textAlignment="textStart"
+                                    android:text="Button" />
+
+                                <TextView
+                                    android:id="@+id/textView23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="12dp"
+                                    android:text="TextView" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:paddingLeft="12dp"
+                                    android:text="Мастер:"
+                                    android:textColor="@color/design_default_color_on_secondary"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textView28"
+                                    android:layout_width="match_parent"
+                                    android:paddingLeft="12dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="TextView" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:paddingLeft="12dp"
+                                    android:text="Создатель:"
+                                    android:textColor="@color/design_default_color_on_secondary"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textView27"
+                                    android:layout_width="match_parent"
+                                    android:paddingLeft="12dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="TextView" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:id="@+id/timeInWorkTitle"
+                                    android:paddingLeft="12dp"
+                                    android:visibility="gone"
+                                    android:text="Время в работе:"
+                                    android:textColor="@color/design_default_color_on_secondary"
+                                    android:textSize="18sp" />
+                                <Chronometer
+                                    android:id="@+id/timeInWork"
+                                    android:layout_width="match_parent"
+                                    android:paddingLeft="12dp"
+                                    android:visibility="gone"
+                                    android:layout_height="wrap_content"
+                                    android:text="TextView" />
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="6dp"
+                                    android:paddingLeft="12dp"
+                                    android:background="@color/background" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:paddingLeft="12dp"
+                                    android:text="Доступные действия:"
+                                    android:textColor="@color/design_default_color_on_secondary"
+                                    android:textSize="18sp" />
+
+                                <Button
+                                    android:id="@+id/button8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:drawableLeft="@drawable/ic_done_all_black_24dp"
+                                    android:textAlignment="textStart"
+                                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                    android:text="Сформировать документы и закрыть" />
+
+                                <Button
+                                    android:id="@+id/button21"
+                                    android:layout_width="match_parent"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="textStart"
+                                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                    android:drawableLeft="@drawable/ic_input_black_24dp"
+                                    android:text="  Начать выполнение" />
+
+                                <Button
+                                    android:id="@+id/button22"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Редактировать"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:textAlignment="textStart"
+                                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                    android:drawableLeft="@drawable/ic_mode_edit_black_24dp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fafafa"
+                        android:padding="12dp"
+                        app:cardBackgroundColor="?android:attr/colorBackground">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/editText2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/input_history"
+                                android:ems="10"
+                                android:hint="Заметка"
+                                android:inputType="textPersonName"
+                                android:padding="12dp" />
+
+                            <Button
+                                android:id="@+id/button7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/ic_send_black_24dp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_behavior="appbar_scrolling_view_behavior"
+                        tools:showIn="@layout/activity_main"
+                        tools:context=".MainActivity">
+
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</RelativeLayout>

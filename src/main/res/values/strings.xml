@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">ИнтехАрт</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!--назввания папок-->
+    <string name="folder_name">IntexArtSale</string>
+    <string name="foler_signature_user">signature</string>
+    <string name="folder_pdf">pdf</string>
+    <string name="folder_audio">audio</string>
+    <string name="folder_photo">photo</string>
+    <string name="folder_log">logs</string>
+    <string name="folder_json">json</string>
+    <string name="folder_html">html</string>
+    <string name="folder_zip">zip</string>
+    <string name="folder_request">request</string>
+
+    <string-array name="t1">
+        <item>Выберете направление</item>
+        <item>Сантехника</item>
+        <item>Электрика</item>
+        <item>Общестрой</item>
+        <item>Благоустройство</item>
+    </string-array>
+
+    <string-array name="t2">
+        <item>Выберете тип</item>
+        <item>Аварийная</item>
+        <item>Платная</item>
+        <item>На время</item>
+        <item>Текущая</item>
+    </string-array>
+    <string-array name="typeCounter">
+        <item>Холодная</item>
+        <item>Горячая</item>
+    </string-array>
+    <string-array name="placeCounter">
+        <item>Кухня</item>
+        <item>С/У</item>
+    </string-array>
+</resources>
